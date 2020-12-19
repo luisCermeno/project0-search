@@ -100,9 +100,6 @@ of the viewport */
   box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 
               0 0 0 1px rgba(0,0,0,0.08);
 }
-.col-bar input{
-  width: 50px;
-}
 .col-bar img
 {
   position: relative;
@@ -160,4 +157,9 @@ of the viewport */
 }
 .main form{
   width: 100%;
+}
+.main input{
+  width: 100%;
+  border: solid 0.1px rgb(217, 217, 217);
+  border-radius: 0px;
 }
