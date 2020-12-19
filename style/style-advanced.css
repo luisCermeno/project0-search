@@ -1,4 +1,3 @@
-
 /* ******************************** */
 /* BODY (viewport) */
 /* ******************************** */
@@ -19,11 +18,13 @@ body>.container-fluid{
 /* Each section occupies a percentage
 of the viewport */
 .nav-bar{
-  height: 6%;
+  height: 80px;
   font-size: 13px;
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
 }
 .main{
-  height: 88%;
+  height: 86%;
 }
 .footer {
   height: 6%;
@@ -36,12 +37,14 @@ of the viewport */
 /* ******************************** */
 /* NavBar */
 /* ******************************** */
+
 .nav-bar a{
   color: black;
   margin-left: 15px;
   margin-right: 15px;
 }
-.nav-bar img{
+
+.nav-bar .products{
   color: black;
   margin-left: 15px;
   margin-right: 15px;
@@ -63,6 +66,7 @@ of the viewport */
   padding: 0 12px;
   text-align: center;
 }
+
 .nav-bar .button-blue
 {
   color: #ffffff;
@@ -71,16 +75,17 @@ of the viewport */
 /* Main */
 /* ******************************** */
 .col-logo{
-  margin-top: 6%;
+  margin-top: 0%;
+  height: 60px;
 }
 .col-bar{
-  margin-top: 3%;
+  margin-top: 0%;
 }
 .col-buttons{
   margin-top: 1%;
 }
 .col-bar .search-bar{
-  width: 580px;
+  width: 480px;
   height: 30px;
   padding: 5px 10px;
   border: 0.1px solid #e4e4e4;
@@ -96,9 +101,7 @@ of the viewport */
               0 0 0 1px rgba(0,0,0,0.08);
 }
 .col-bar input{
-  width: 510px;
-  border:0px;
-  outline: none;
+  width: 50px;
 }
 .col-bar img
 {
@@ -140,4 +143,21 @@ of the viewport */
   color: #757575;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+/* ******************************** */
+/* advanced.html */
+/* *****************************s*** */
+.logo-subtext
+{
+  color: #d93025;
+  font: 20px arial, sans-serif;
+  font-weight: 400;
+  position: relative;
+  left: 15px;
+  top: 20px;
+  white-space: nowrap;
+}
+.main form{
+  width: 100%;
 }

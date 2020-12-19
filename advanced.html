@@ -1,0 +1,138 @@
+<!-- for reference on google request paramters visit: -->
+<!-- https://stenevang.wordpress.com/2013/02/22/google-advanced-power-search-url-request-parameters/ -->
+<!-- notes -->
+<!-- FIX: improve column nesting on index.html and image.html -->
+<!-- FIX: blue button class on images.html, take reference on index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap libray -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Google Advanced Search</title>
+    <!-- Tab icon (it only worked with .ico extensions)-->
+    <link rel="icon" href="img/googlefevicon.ico" sizes="64x64">
+    <link rel="stylesheet" href="style/style-advanced.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- nav-bar -->
+      <div class="row align-items-center nav-bar">
+        <div class="col-6 text-left">
+        <span><img width="90px" height="30px" src="img/google-main.png" alt="Google" width="272" height="92"></span>
+        </div>
+        <div class="col-6 text-right">
+          <a href="index.html">Search</a>
+          <img class="products" src="img/products.png" width="24" height="24">
+          <a type="button" href="https://accounts.google.com/signin" class="button-blue">Sign in</a>
+        </div>
+      </div>
+      <!-- main -->
+      <div class="row align-content-start main">
+        <!-- logo -->
+        <div class="col-12 col-logo border">
+          <div><label class="logo-subtext">Advanced Search</label></div>
+        </div>
+        <form action="https://google.com/search">
+          <!-- find pages with... -->
+          <div class="col-12 border">
+            <div class="row">
+              <div class="col-2 border">
+                Find pages with...
+              </div>
+              <div class="col-5 border">
+                <input  type="text" name="q" maxlength="2048">
+              </div>
+              <div class="col-5 border">
+                To do this in the search box.
+              </div>
+            </div>
+          </div>
+          <!-- all these words -->
+          <div class="col-12 border">
+            <div class="row">
+              <div class="col-2 border">
+                all these words:
+              </div>
+              <div class="col-5 border">
+                Input field here
+              </div>
+              <div class="col-5 border">
+                Type the important words: tri-colour rat terrier
+              </div>
+            </div>
+          </div>
+          <!-- this exact word or phrase -->
+          <div class="col-12 border">
+            <div class="row">
+              <div class="col-2 border">
+                this exact word or phrase:
+              </div>
+              <div class="col-5 border">
+                Input field here
+              </div>
+              <div class="col-5 border">
+                Put exact words in quotes: "rat terrier"
+              </div>
+            </div>
+          </div>
+          <!-- any of these words -->
+          <div class="col-12 border">
+            <div class="row">
+              <div class="col-2 border">
+                any of these words:
+              </div>
+              <div class="col-5 border">
+                Input field here
+              </div>
+              <div class="col-5 border">
+                Type OR between all the words you want: miniature OR standard
+              </div>
+            </div>
+          </div>
+          <!-- none of these words -->
+          <div class="col-12 border">
+            <div class="row">
+              <div class="col-2 border">
+                Find pages with...
+              </div>
+              <div class="col-5 border">
+                Input field here
+              </div>
+              <div class="col-5 border">
+                Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"
+              </div>
+            </div>
+          </div>
+          <!-- advanced search button bar -->
+          <div class="col-12 border text-center">
+            <button type="submit" href="https://accounts.google.com/signin" class="button-blue">Advanced Search</button>
+          </div>
+        </form>
+        <!-- You can also.. -->
+        <div class="col-12 border">
+          <div>You can also...</div>
+          <div><a href="https://support.google.com/websearch?p=adv_pages_similar&hl=en">Find pages that are similar to a URL</a></div>
+          <div><a href="https://support.google.com/websearch?p=adv_pages_visited&hl=en">Search pages that you've visited</a></div>
+          <div><a href="https://support.google.com/websearch?p=adv_operators&hl=en">Use operators in the search box</a></div>
+          <div><a href="https://www.google.com/preferences?hl=en">Customise your search settings</a></div>
+          
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="row align-items-center footer">
+        <div class="col-6 text-left">
+          <a href="https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpafooter&amp;fg=1" ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://www.google.com/intl/en_us/ads/%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&amp;ved=0ahUKEwiSot_SqaHsAhVYJzQIHSNvB7IQkdQCCBg">Advertising</a>
+          <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpbfooter&amp;fg=1" ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://www.google.com/services/%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&amp;ved=0ahUKEwiSot_SqaHsAhVYJzQIHSNvB7IQktQCCBk">Business</a>
+          <a href="https://google.com/search/howsearchworks/?fg=1">  How Search works </a>
+        </div>
+        <div class="col-6 text-right">
+          <a href="https://policies.google.com/privacy?hl=en&amp;fg=1" ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://policies.google.com/privacy%3Fhl%3Den%26fg%3D1&amp;ved=0ahUKEwiSot_SqaHsAhVYJzQIHSNvB7IQ8awCCBQ">Privacy</a>
+          <a href="https://policies.google.com/terms?hl=en&amp;fg=1" ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://policies.google.com/terms%3Fhl%3Den%26fg%3D1&amp;ved=0ahUKEwiSot_SqaHsAhVYJzQIHSNvB7IQ8qwCCBU">Terms</a>
+          <a href="https://www.google.com/preferences?hl=en" id="fsettl" aria-controls="fsett" aria-expanded="false" aria-haspopup="true" role="button" jsaction="foot.cst" ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://www.google.com/preferences%3Fhl%3Den&amp;ved=0ahUKEwiSot_SqaHsAhVYJzQIHSNvB7IQzq0CCBY">Settings</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
