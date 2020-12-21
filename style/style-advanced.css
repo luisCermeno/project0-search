@@ -24,7 +24,7 @@ of the viewport */
   border-top: 1px solid #e4e4e4;
 }
 .main{
-  height: 86%;
+  height: 83%;
 }
 .footer {
   height: 6%;
@@ -75,8 +75,9 @@ of the viewport */
 /* Main */
 /* ******************************** */
 .col-logo{
-  margin-top: 0%;
-  height: 60px;
+  height: 70px;
+  border-bottom: solid 1px #e4e4e4;
+  margin-bottom: 20px;
 }
 .col-bar{
   margin-top: 0%;
@@ -151,15 +152,53 @@ of the viewport */
   font: 20px arial, sans-serif;
   font-weight: 400;
   position: relative;
-  left: 15px;
-  top: 20px;
+  top: 25px;
   white-space: nowrap;
 }
-.main form{
-  width: 100%;
-}
+
 .main input{
   width: 100%;
   border: solid 0.1px rgb(217, 217, 217);
   border-radius: 0px;
+}
+
+.margins
+{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  
+}
+
+.criteria
+{
+  font-size: 13px;
+}
+
+.description
+{
+  color: rgb(85, 85, 85);
+  font-size: 11px;
+}
+
+.padding
+{
+  padding-left: 20px;
+}
+
+.description-bold
+{
+  color: rgb(119, 119, 119);
+  font-size: 13px;
+  font-weight: 700;;
+}
+
+.border-bottom
+{
+  border-bottom: solid 1px #e4e4e4;
+}
+
+.link a
+{
+  color: rgb(17, 34, 204);
+  font-size: 13px;
 }

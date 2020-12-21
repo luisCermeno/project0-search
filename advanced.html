@@ -1,8 +1,5 @@
 <!-- for reference on google request paramters visit: -->
 <!-- https://stenevang.wordpress.com/2013/02/22/google-advanced-power-search-url-request-parameters/ -->
-<!-- notes -->
-<!-- FIX: improve column nesting on index.html and image.html -->
-<!-- FIX: blue button class on images.html, take reference on index.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Google Advanced Search</title>
     <!-- Tab icon (it only worked with .ico extensions)-->
-    <link rel="icon" href="img/googlefevicon.ico" sizes="64x64">
+    <link rel="icon" sizes="64x64" href="img/googlefevicon.ico" >
     <link rel="stylesheet" href="style/style-advanced.css">
   </head>
   <body>
@@ -31,92 +28,93 @@
       <!-- main -->
       <div class="row align-content-start main">
         <!-- logo -->
-        <div class="col-12 col-logo border">
-          <div><label class="logo-subtext">Advanced Search</label></div>
+        <div class="col-12 col-logo padding">
+          <div class="padding"><label class="logo-subtext">Advanced Search</label></div>
         </div>
-        <form action="https://google.com/search">
-          <!-- find pages with... -->
-          <div class="col-12 border">
-            <div class="row">
-              <div class="col-2 border">
-                Find pages with...
-              </div>
-              <div class="col-5 border">
-              </div>
-              <div class="col-5 border">
-                To do this in the search box.
-              </div>
-            </div>
-          </div>
-          <!-- all these words -->
-          <div class="col-12 border">
-            <div class="row">
-              <div class="col-2 border">
-                all these words:
-              </div>
-              <div class="col-5 border">
-                <input  type="text" name="q" maxlength="2048">
-              </div>
-              <div class="col-5 border">
-                Type the important words: tri-colour rat terrier
+        <div class="col-12 col-form padding">
+          <form action="https://google.com/search">
+            <!-- find pages with... -->
+            <div class="col-12 margins padding">
+              <div class="row">
+                <div class="col-2">
+                  Find pages with...
+                </div>
+                <div class="col-5">
+                </div>
+                <div class="col-5 description-bold">
+                  To do this in the search box.
+                </div>
               </div>
             </div>
-          </div>
-          <!-- this exact word or phrase -->
-          <div class="col-12 border">
-            <div class="row">
-              <div class="col-2 border">
-                this exact word or phrase:
-              </div>
-              <div class="col-5 border">
-                <input  type="text" name="q" maxlength="2048">
-              </div>
-              <div class="col-5 border">
-                Put exact words in quotes: "rat terrier"
-              </div>
-            </div>
-          </div>
-          <!-- any of these words -->
-          <div class="col-12 border">
-            <div class="row">
-              <div class="col-2 border">
-                any of these words:
-              </div>
-              <div class="col-5 border">
-                <input  type="text" name="q" maxlength="2048">
-              </div>
-              <div class="col-5 border">
-                Type OR between all the words you want: miniature OR standard
+            <!-- all these words -->
+            <div class="col-12 margins padding">
+              <div class="row">
+                <div class="col-2 criteria">
+                  all these words:
+                </div>
+                <div class="col-5">
+                  <input  type="text" name="as_q" maxlength="2048">
+                </div>
+                <div class="col-5 description">
+                  Type the important words: tri-colour rat terrier
+                </div>
               </div>
             </div>
-          </div>
-          <!-- none of these words -->
-          <div class="col-12 border">
-            <div class="row">
-              <div class="col-2 border">
-                Find pages with...
-              </div>
-              <div class="col-5 border">
-                <input  type="text" name="q" maxlength="2048">
-              </div>
-              <div class="col-5 border">
-                Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"
+            <!-- this exact word or phrase -->
+            <div class="col-12 margins padding">
+              <div class="row">
+                <div class="col-2 criteria">
+                  this exact word or phrase:
+                </div>
+                <div class="col-5">
+                  <input  type="text" name="as_epq" maxlength="2048">
+                </div>
+                <div class="col-5 description">
+                  Put exact words in quotes: "rat terrier"
+                </div>
               </div>
             </div>
-          </div>
-          <!-- advanced search button bar -->
-          <div class="col-12 border text-center">
-            <button type="submit" href="https://accounts.google.com/signin" class="button-blue">Advanced Search</button>
-          </div>
-        </form>
+            <!-- any of these words -->
+            <div class="col-12 margins padding">
+              <div class="row">
+                <div class="col-2 criteria">
+                  any of these words:
+                </div>
+                <div class="col-5">
+                  <input  type="text" name="as_oq" maxlength="2048">
+                </div>
+                <div class="col-5 description">
+                  Type OR between all the words you want: miniature OR standard
+                </div>
+              </div>
+            </div>
+            <!-- none of these words -->
+            <div class="col-12 margins padding">
+              <div class="row">
+                <div class="col-2 criteria">
+                  none of these words:
+                </div>
+                <div class="col-5">
+                  <input  type="text" name="as_eq" maxlength="2048">
+                </div>
+                <div class="col-5 description">
+                  Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"
+                </div>
+              </div>
+            </div>
+            <!-- advanced search button bar -->
+            <div class="col-12 text-center border-bottom">
+              <button type="submit" class="button-blue">Advanced Search</button>
+            </div>
+          </form>
+        </div>
         <!-- You can also.. -->
-        <div class="col-12 border">
-          <div>You can also...</div>
-          <div><a href="https://support.google.com/websearch?p=adv_pages_similar&hl=en">Find pages that are similar to a URL</a></div>
-          <div><a href="https://support.google.com/websearch?p=adv_pages_visited&hl=en">Search pages that you've visited</a></div>
-          <div><a href="https://support.google.com/websearch?p=adv_operators&hl=en">Use operators in the search box</a></div>
-          <div><a href="https://www.google.com/preferences?hl=en">Customise your search settings</a></div>
-          
+        <div class="col-12 padding margins" >
+          <div class="padding">You can also...</div>
+          <div class="link padding"><a href="https://support.google.com/websearch?p=adv_pages_similar&hl=en">Find pages that are similar to a URL</a></div>
+          <div class="link padding"><a href="https://support.google.com/websearch?p=adv_pages_visited&hl=en">Search pages that you've visited</a></div>
+          <div class="link padding"><a href="https://support.google.com/websearch?p=adv_operators&hl=en">Use operators in the search box</a></div>
+          <div class="link padding"><a href="https://www.google.com/preferences?hl=en">Customise your search settings</a></div>
         </div>
       </div>
       <!-- footer -->

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Google Images</title>
     <!-- Tab icon (it only worked with .ico extensions)-->
-    <link rel="icon" href="img/googlefevicon.ico" sizes="64x64">
+    <link rel="icon" sizes="64x64" href="img/googlefevicon.ico" >
     <link rel="stylesheet" href="style/style-images.css">
   </head>
   <body>
@@ -22,23 +22,23 @@
         <div class="col-6 text-right">
           <a href="index.html">Search</a>
           <img class="products" src="img/products.png" width="24" height="24">
-          <a type="button" href="https://accounts.google.com/signin" class="button" href="">Sign in</a>
+          <a type="button" href="https://accounts.google.com/signin" class="button-blue">Sign in</a>
         </div>
       </div>
       <!-- main -->
-      <div class="row main">
-        <div class="col-12">
-          <!-- logo -->
-          <div class="col-12 text-center col-logo">
-            <img class="img" src="img/google-main.png" alt="Google" width="272" height="92">
-            <div><span class="logo-subtext">images</span></div>
-          </div>
-          <!-- search bar -->
+      <div class="row align-content-start main">
+        <!-- logo -->
+        <div class="col-12 col-logo text-center">
+          <img class="img" src="img/google-main.png" alt="Google" width="272" height="92">
+          <div><span class="logo-subtext">images</span></div>
+        </div>
+        <!-- search bar -->
+        <div class="col-12 col-form text-center>
           <form action="https://www.google.com/search">
             <div class="col-12 text-center col-bar">
               <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
               <button type="button" class="search-bar"> 
-                <input  type="text" name="q" maxlength="2048">
+                <input type="text" name="q" maxlength="2048">
                 <input type="hidden" name="tbm" value="isch">
               </button>
               <img src="img/googlemic.png" width="24" height="24" alt="google search mic">
