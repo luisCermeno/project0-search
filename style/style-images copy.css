@@ -1,3 +1,4 @@
+
 /* ******************************** */
 /* BODY (viewport) */
 /* ******************************** */
@@ -18,13 +19,11 @@ body>.container-fluid{
 /* Each section occupies a percentage
 of the viewport */
 .nav-bar{
-  height: 80px;
+  height: 6%;
   font-size: 13px;
-  background: #f2f2f2;
-  border-top: 1px solid #e4e4e4;
 }
 .main{
-  height: 83%;
+  height: 88%;
 }
 .footer {
   height: 6%;
@@ -37,14 +36,12 @@ of the viewport */
 /* ******************************** */
 /* NavBar */
 /* ******************************** */
-
 .nav-bar a{
   color: black;
   margin-left: 15px;
   margin-right: 15px;
 }
-
-.nav-bar .products{
+.nav-bar img{
   color: black;
   margin-left: 15px;
   margin-right: 15px;
@@ -75,9 +72,7 @@ of the viewport */
 /* Main */
 /* ******************************** */
 .col-logo{
-  height: 70px;
-  border-bottom: solid 1px #e4e4e4;
-  margin-bottom: 20px;
+  margin-top: 8%;
 }
 .col-bar{
   margin-top: 0%;
@@ -100,6 +95,11 @@ of the viewport */
   border: 0px;
   box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 
               0 0 0 1px rgba(0,0,0,0.08);
+}
+.col-bar input{
+  width: 410px;
+  border:0px;
+  outline: none;
 }
 .col-bar img
 {
@@ -144,61 +144,14 @@ of the viewport */
 }
 
 /* ******************************** */
-/* advanced.html */
+/* images.html */
 /* *****************************s*** */
 .logo-subtext
 {
-  color: #d93025;
-  font: 20px arial, sans-serif;
-  font-weight: 400;
+  color: #4285f4;
+  font: 16px/16px roboto-regular, arial, sans-serif;
   position: relative;
-  top: 25px;
+  left: 106px;
+  bottom: 20px;
   white-space: nowrap;
-}
-
-.main input{
-  width: 100%;
-  border: solid 0.1px rgb(217, 217, 217);
-  border-radius: 0px;
-}
-
-.margins
-{
-  margin-top: 15px;
-  margin-bottom: 15px;
-  
-}
-
-.criteria
-{
-  font-size: 13px;
-}
-
-.description
-{
-  color: rgb(85, 85, 85);
-  font-size: 11px;
-}
-
-.padding
-{
-  padding-left: 20px;
-}
-
-.description-bold
-{
-  color: rgb(119, 119, 119);
-  font-size: 13px;
-  font-weight: 700;;
-}
-
-.border-bottom
-{
-  border-bottom: solid 1px #e4e4e4;
-}
-
-.link a
-{
-  color: rgb(17, 34, 204);
-  font-size: 13px;
 }
